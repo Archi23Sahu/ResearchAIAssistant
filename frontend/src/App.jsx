@@ -34,7 +34,7 @@ export default function App() {
     ];
 
     try {
-      const res = await fetch("http://localhost:8000/research", {
+      const res = await fetch("https://researchaiassistant.onrender.com/research", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ topic: searchTopic }),
